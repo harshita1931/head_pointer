@@ -56,6 +56,12 @@ while not vs.stopped:
             if pointer[1] - intial[1] < 20:
               # cv2.waitKey(0)       
               gui.scroll(1)
+
+            if pointer[0] - intial[0] >20 :
+              gui.hscroll(-1)
+            
+            if pointer[0] - intial[0] < 20 :
+              gui.hscroll(1)
                       
     #       # pointer = tuple([i.x,i.y])
     #       # print pointer     
